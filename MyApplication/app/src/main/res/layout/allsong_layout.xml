@@ -1,6 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="5555"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:textSize="45sp"
+            android:id="@+id/txtCode"
+            android:textColor="@android:color/holo_red_dark" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="476dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="You Raise Me Up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtSongName"
+                android:textSize="28sp"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:text="Westlife"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtSinger"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="32dp">
+
+                <ImageButton
+                    android:layout_width="38dp"
+                    android:layout_height="32dp"
+                    app:srcCompat="@drawable/like"
+                    android:id="@+id/btnDislike" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView"
+                    android:layout_width="30dp" />
+
+                <ImageButton
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    app:srcCompat="@drawable/dislike"
+                    android:id="@+id/btnLike"
+                    android:layout_weight="0.00" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_weight="1" />
+
+    </LinearLayout>
 
 </LinearLayout>

@@ -5,12 +5,12 @@ import android.os.Bundle;
 import android.widget.TabHost;
 
 public class MainActivity extends AppCompatActivity {
-
+    private
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
+
         addControls();
         addEvents();
     }
@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         TabHost.TabSpec tab2 = tabHost.newTabSpec("tab2");
-        tab1.setIndicator("", getResources().getDrawable(R.drawable.tab2));
-        tab1.setContent(R.id.tab2);
+        tab2.setIndicator("", getResources().getDrawable(R.drawable.tab2));
+        tab2.setContent(R.id.tab2);
         tabHost.addTab(tab2);
     }
 }
