@@ -45,10 +45,10 @@
                 android:layout_height="32dp">
 
                 <ImageButton
-                    android:layout_width="38dp"
                     android:layout_height="32dp"
                     app:srcCompat="@drawable/like"
-                    android:id="@+id/btnDislike" />
+                    android:id="@+id/btnDislike"
+                    android:layout_width="32dp" />
 
                 <TextView
                     android:layout_height="wrap_content"
